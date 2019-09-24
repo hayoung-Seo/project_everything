@@ -1,0 +1,22 @@
+* {
+    border: 1px solid pink;   
+}
+
+.previous_game {
+    min-height : 100px;
+    
+}
+
+.next_game {
+    min-height : 100px;
+    margin-top: 2px;
+}
+
+.latest_news {
+    min-height: 300px;
+    margin-top: 2px;
+}
+
+.data_visualization {
+    min-height: 500px;
+}
