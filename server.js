@@ -15,4 +15,4 @@ app.use(express.static(__dirname + "/public/dist/public"));
 mongoose = require('./server/config/mongoose.js');
 
 // routes
-// require('./server/config/routes.js')(app)
+require('./server/config/routes.js')(app)

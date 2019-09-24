@@ -10,6 +10,7 @@ import {HttpService} from './http.service';
 export class AppComponent {
   title = 'public';
 
-  favorite_team = "Team Name";
+  favorite_team = "FC Barcelona";
+  // favorite_team = "real madrid CF";
   constructor(private _httpService : HttpService){}
 }

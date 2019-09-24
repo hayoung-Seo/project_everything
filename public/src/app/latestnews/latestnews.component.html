@@ -1,1 +1,12 @@
-<p>latestnews works!</p>
+<div class="p-1">
+    <p class="h5 bg-success p-1">Latest News for {{team}}</p>
+    <div *ngFor="let news of recent_news" class="row">
+        <a [href]="news.url" class="col-sm-4 mb-1" target="_blank">
+            <img [src]="news.urlToImage" alt="news image" class="news_img">
+        </a>
+        <div class="col-sm-7 ml-1">
+            <p class="font-weight-bold">{{news.title}}</p>
+            <p>{{news.description}}..</p>
+        </div>
+    </div>
+</div>

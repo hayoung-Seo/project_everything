@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import {HttpService} from './http.service';
 import {HttpClientModule} from '@angular/common/http';
 import { LatestnewsComponent } from './latestnews/latestnews.component';
+import { TwitterdataComponent } from './twitterdata/twitterdata.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LatestnewsComponent
+    LatestnewsComponent,
+    TwitterdataComponent
   ],
   imports: [
     BrowserModule,

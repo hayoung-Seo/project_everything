@@ -13,6 +13,7 @@
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "mongoose": "^5.7.1",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.3.0",
+    "twitter": "^1.7.1"
   }
 }

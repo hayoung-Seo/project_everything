@@ -13,10 +13,9 @@
         <div class="col-sm-6">
           <div class="previous_game">Previous game score component</div>
           <div class="next_game">Next game component</div>
-          <div class="latest_news">
-            Latest News component
-            <app-latestnews></app-latestnews>
-          </div>
+          <!-- <div class="latest_news"> -->
+            <app-latestnews [team]="favorite_team"></app-latestnews>
+          <!-- </div> -->
         </div>
 
         <div class="col-sm-6">
@@ -30,7 +29,8 @@
         </div>
 
         <div class="col-sm-6">
-          <div class="twitter_data">Data from twitter component</div>
+          <!-- <div class="twitter_data">Data from twitter component</div> -->
+          <app-twitterdata [team]="favorite_team"></app-twitterdata>
         </div>
       </div>
     </div>
