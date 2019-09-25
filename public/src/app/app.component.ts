@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 
 import {HttpService} from './http.service';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,4 +12,5 @@ export class AppComponent {
   favorite_team = "FC Barcelona";
   // favorite_team = "real madrid CF";
   constructor(private _httpService : HttpService){}
+
 }
