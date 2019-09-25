@@ -8,12 +8,16 @@ import {HttpService} from './http.service';
 import {HttpClientModule} from '@angular/common/http';
 import { LatestnewsComponent } from './latestnews/latestnews.component';
 import { ChatComponent } from './chat/chat.component';
+import { TwitterdataComponent } from './twitterdata/twitterdata.component';
+import { MatchComponent } from './match/match.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LatestnewsComponent,
-    ChatComponent
+    ChatComponent,
+    TwitterdataComponent,
+    MatchComponent
   ],
   imports: [
     BrowserModule,

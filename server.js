@@ -15,7 +15,7 @@ app.use(express.static(__dirname + "/public/dist/public"));
 mongoose = require('./server/config/mongoose.js');
 
 // routes
-require('./server/config/routes.js')(app)
+// require('./server/config/routes.js')(app)
 
 //sockets
 const io = require('socket.io')(server);
@@ -46,3 +46,4 @@ io.on('connection', function (socket) { //2
         io.emit('new_message', { name: users[socket.id], msg: data})
    })
 });
+require('./server/config/routes.js')(app)

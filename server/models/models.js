@@ -11,9 +11,30 @@ const UserSchema = new mongoose.Schema({
 
 
 // TODO : build team schema once decided what kind of data to store in it.
-// const TeamSchema = new mongoose.Schema({
-//     team_name = {type:String, required: [true, "Team name is required"], minlength:[2, "Team name should be at least 2 characters"]},
-// })
+const TeamSchema = new mongoose.Schema({
+    team_name : {type:String, required: [true, "Team name is required"], minlength:[2, "Team name should be at least 2 characters"]},
+    team_name_abb : {type:String, required: [true, "Team abb name is required"], minlength:[2, "Team abb name should be at least 2 characters"]},
+    schedule_search_name : {type:String, required: [true, "Team schedule search name is required"], minlength:[2, "Team schedule search name should be at least 2 characters"]},
+    img_url : {type:String}
+}, {timestamps: true})
+
+
+// match data
+const MatchSchema = new mongoose.Schema({
+    index : {type:String},
+    team_name: {type:String},
+    team_name_abb:{type:String},
+    match_date:{type:String},
+    vs_or_at:{type:String},
+    opp_team_abb:{type:String},
+    opp_team_img_url:{type:String},
+    finished:{type:String},
+    w_or_l:{type:String},
+    score_team:{type:String},
+    score_opp:{type:String},
+    league:{type:String}
+})
 
 mongoose.model("User", UserSchema);
-// mongoose.model("Team", TeamSchema);
+mongoose.model("Team", TeamSchema);
+mongoose.model("Match", MatchSchema);
