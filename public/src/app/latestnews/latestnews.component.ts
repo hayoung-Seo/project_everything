@@ -28,11 +28,30 @@ export class LatestnewsComponent implements OnInit {
         console.log("--error while getting news for ", this.team);
       } else {
         this.recent_news = data['articles'].slice(0,3);
+        // for (let x of this.recent_news) {
+        //   console.log("urlToImage: ", x.urlToImage, x.urlToImage==null, x.urlToImage==undefined);
+        // }
+        // this.select_news(data['articles'],3);
         console.log("--got recent news data : ", this.recent_news);
         this.cut_description();
       }
     })
   }
+
+  // select_news(news, num_news) {
+  //   this.recent_news = []; 
+  //   let cnt = 0;
+  //   for (let x of news) {
+  //     // console.log("urlToImage: ", x.urlToImage, x.urlToImage==null, x.urlToImage==undefined);
+  //     if (x.urlToImage != undefined) {
+  //       this.recent_news.push(news);
+  //       cnt++;
+  //     }
+  //     if (cnt >= num_news) {
+  //       break;
+  //     }
+  //   }
+  // }
 
   cut_description() {
     for (let news of this.recent_news) {
@@ -40,6 +59,4 @@ export class LatestnewsComponent implements OnInit {
       news['description'] = news['description'].split(' ').slice(0,15).join(" ");
     }
   }
-
-
 }

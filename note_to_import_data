@@ -1,0 +1,35 @@
+// running matchdata_gen.py will generate an updated data (collect data from foxsports) and it'll export data.csv in this directory.
+: rm data.csv (delete old data csv ßfile)
+: python3 matchdata_gen.py
+
+// to import the csv file to mongodb, we need to clean match_data collection and reimport the csv file.
+1. in Mongo 
+    : use project_everything
+    : db.matches.drop();
+2. in Command Line 
+    : mongoimport -d project_everything -c matches --type csv --file data.csv --headerline
+
+// create 10 teams information (in mongodb). doesn't need to be updated everytime
+// code for creating the collection
+use project_everything
+db.createCollection("teams")
+// insert our 10 teams
+db.teams.insert({team_name:'FC Barcelona', team_name_abb: 'BAR', schedule_search_name:'barcelona', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6162.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Manchester City FC',team_name_abb: 'MCI', schedule_search_name:'manchester-city', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6158.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Juventus FC',team_name_abb: 'JUV', schedule_search_name:'juventus', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/7149.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Liverpool FC',team_name_abb: 'LIV', schedule_search_name:'liverpool', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6140.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Real Madrid CF',team_name_abb: 'RMD', schedule_search_name:'real-madrid', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6171.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Manchester United FC',team_name_abb: 'MAN', schedule_search_name:'manchester-united', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6157.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Chelsea FC',team_name_abb: 'CHE', schedule_search_name:'chelsea', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6159.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Arsenal FC',team_name_abb: 'ARS', schedule_search_name:'arsenal', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6145.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'Tottenham Hotspur FC',team_name_abb: 'TOT', schedule_search_name:'tottenham-hotspur', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6154.vresize.36.36.medium.0.png'})
+
+db.teams.insert({team_name:'FC Bayern Munich',team_name_abb: 'BM', schedule_search_name:'bayern-munich', img_url:'https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6129.vresize.36.36.medium.0.png'})

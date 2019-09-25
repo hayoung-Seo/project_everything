@@ -1,0 +1,151 @@
+index,team_name,team_name_abb,match_date,vs_or_at,opp_team_abb,opp_team_img_url,finished,w_or_l,score_team,score_opp,league
+0,barcelona,BAR,8/31,AT,OSA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/copa-rey/6175.vresize.36.36.medium.0.png,True,D,2,2,La Liga
+1,barcelona,BAR,9/14,VS,VAL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6169.vresize.36.36.medium.0.png,True,W,5,2,La Liga
+2,barcelona,BAR,9/17,AT,DOR,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6122.vresize.36.36.medium.0.png,True,D,0,0,UCL
+3,barcelona,BAR,9/21,AT,GRA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/23420.vresize.36.36.medium.0.png,True,L,0,2,La Liga
+4,barcelona,BAR,9/24,VS,VIL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6170.vresize.36.36.medium.0.png,True,W,2,1,La Liga
+5,barcelona,BAR,9/28,AT,GET,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6174.vresize.36.36.medium.0.png,False,,,,La Liga
+6,barcelona,BAR,10/2,VS,INT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/6391.vresize.36.36.medium.0.png,False,,,,UCL
+7,barcelona,BAR,10/6,VS,SEV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6167.vresize.36.36.medium.0.png,False,,,,La Liga
+8,barcelona,BAR,10/19,AT,EIB,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/8319.vresize.36.36.medium.0.png,False,,,,La Liga
+9,barcelona,BAR,10/23,AT,SLP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ucl/7499.vresize.36.36.medium.0.png,False,,,,UCL
+10,barcelona,BAR,10/27,VS,RMD,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6171.vresize.36.36.medium.0.png,False,,,,La Liga
+11,barcelona,BAR,10/30,VS,VLD,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/7189.vresize.36.36.medium.0.png,False,,,,La Liga
+12,barcelona,BAR,11/3,AT,LEV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6166.vresize.36.36.medium.0.png,False,,,,La Liga
+13,barcelona,BAR,11/5,VS,SLP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ucl/7499.vresize.36.36.medium.0.png,False,,,,UCL
+14,barcelona,BAR,11/10,VS,CEL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6163.vresize.36.36.medium.0.png,False,,,,La Liga
+15,manchester-city,MCI,8/31,VS,BHA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/8257.vresize.36.36.medium.0.png,True,W,4,0,EPL
+16,manchester-city,MCI,9/14,AT,NC,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/7132.vresize.36.36.medium.0.png,True,L,2,3,EPL
+17,manchester-city,MCI,9/18,AT,DON,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ucl/6457.vresize.36.36.medium.0.png,True,W,3,0,UCL
+18,manchester-city,MCI,9/21,VS,WAT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/6148.vresize.36.36.medium.0.png,True,W,8,0,EPL
+19,manchester-city,MCI,9/24,AT,PNE,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/8244.vresize.36.36.medium.0.png,True,W,3,0,Lg Cup
+20,manchester-city,MCI,9/28,AT,EVE,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6149.vresize.36.36.medium.0.png,False,,,,EPL
+21,manchester-city,MCI,10/1,VS,DZ,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/7495.vresize.36.36.medium.0.png,False,,,,UCL
+22,manchester-city,MCI,10/6,VS,WLV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/7140.vresize.36.36.medium.0.png,False,,,,EPL
+23,manchester-city,MCI,10/19,AT,CP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7131.vresize.36.36.medium.0.png,False,,,,EPL
+24,manchester-city,MCI,10/22,VS,ATA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/6389.vresize.36.36.medium.0.png,False,,,,UCL
+25,manchester-city,MCI,10/26,VS,AV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6144.vresize.36.36.medium.0.png,False,,,,EPL
+26,manchester-city,MCI,11/2,VS,SHN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7128.vresize.36.36.medium.0.png,False,,,,EPL
+27,manchester-city,MCI,11/6,AT,ATA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/6389.vresize.36.36.medium.0.png,False,,,,UCL
+28,manchester-city,MCI,11/10,AT,LIV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6140.vresize.36.36.medium.0.png,False,,,,EPL
+29,manchester-city,MCI,11/23,VS,CHE,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6159.vresize.36.36.medium.0.png,False,,,,EPL
+30,juventus,JUV,8/31,VS,NAP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/7151.vresize.36.36.medium.0.png,True,W,4,3,Serie A
+31,juventus,JUV,9/14,AT,FIO,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/6390.vresize.36.36.medium.0.png,True,D,0,0,Serie A
+32,juventus,JUV,9/18,AT,ATM,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6172.vresize.36.36.medium.0.png,True,D,2,2,UCL
+33,juventus,JUV,9/21,VS,VNA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/7153.vresize.36.36.medium.0.png,True,W,2,1,Serie A
+34,juventus,JUV,9/24,AT,BRE,https://b.fssta.com/uploads/application/bigboard/soccer/defaultTeamLogo.png,True,W,2,1,Serie A
+35,juventus,JUV,9/28,VS,SPL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/30743.vresize.36.36.medium.0.png,False,,,,Serie A
+36,juventus,JUV,10/1,VS,LEV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6133.vresize.36.36.medium.0.png,False,,,,UCL
+37,juventus,JUV,10/6,AT,INT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/6391.vresize.36.36.medium.0.png,False,,,,Serie A
+38,juventus,JUV,10/19,VS,BGN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/7147.vresize.36.36.medium.0.png,False,,,,Serie A
+39,juventus,JUV,10/22,VS,LKM,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/7448.vresize.36.36.medium.0.png,False,,,,UCL
+40,juventus,JUV,10/26,AT,LEC,https://b.fssta.com/uploads/application/bigboard/soccer/defaultTeamLogo.png,False,,,,Serie A
+41,juventus,JUV,10/30,VS,GEN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/7158.vresize.36.36.medium.0.png,False,,,,Serie A
+42,juventus,JUV,11/2,AT,TOR,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/6399.vresize.36.36.medium.0.png,False,,,,Serie A
+43,juventus,JUV,11/6,AT,LKM,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/7448.vresize.36.36.medium.0.png,False,,,,UCL
+44,juventus,JUV,11/10,VS,MIL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/6393.vresize.36.36.medium.0.png,False,,,,Serie A
+45,liverpool,LIV,8/24,VS,ARS,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6145.vresize.36.36.medium.0.png,True,W,3,1,EPL
+46,liverpool,LIV,8/31,AT,BUR,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/8240.vresize.36.36.medium.0.png,True,W,3,0,EPL
+47,liverpool,LIV,9/14,VS,NU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6151.vresize.36.36.medium.0.png,True,W,3,1,EPL
+48,liverpool,LIV,9/17,AT,NAP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/serie-a/retina/7151.vresize.36.36.medium.0.png,True,L,0,2,UCL
+49,liverpool,LIV,9/22,AT,CHE,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6159.vresize.36.36.medium.0.png,True,W,2,1,EPL
+50,liverpool,LIV,9/25,AT,MK,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/7138.vresize.36.36.medium.0.png,False,,,,Lg Cup
+51,liverpool,LIV,9/28,AT,SU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/6141.vresize.36.36.medium.0.png,False,,,,EPL
+52,liverpool,LIV,10/2,VS,RBS,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/7531.vresize.36.36.medium.0.png,False,,,,UCL
+53,liverpool,LIV,10/5,VS,LEI,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7127.vresize.36.36.medium.0.png,False,,,,EPL
+54,liverpool,LIV,10/20,AT,MAN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6157.vresize.36.36.medium.0.png,False,,,,EPL
+55,liverpool,LIV,10/23,AT,GNK,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/belg/6183.vresize.36.36.medium.0.png,False,,,,UCL
+56,liverpool,LIV,10/27,VS,TOT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6154.vresize.36.36.medium.0.png,False,,,,EPL
+57,liverpool,LIV,11/2,AT,AV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6144.vresize.36.36.medium.0.png,False,,,,EPL
+58,liverpool,LIV,11/5,VS,GNK,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/belg/6183.vresize.36.36.medium.0.png,False,,,,UCL
+59,liverpool,LIV,11/10,VS,MCI,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6158.vresize.36.36.medium.0.png,False,,,,EPL
+60,real-madrid,RMD,8/24,VS,VLD,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/7189.vresize.36.36.medium.0.png,True,D,1,1,La Liga
+61,real-madrid,RMD,9/1,AT,VIL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6170.vresize.36.36.medium.0.png,True,D,2,2,La Liga
+62,real-madrid,RMD,9/14,VS,LEV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6166.vresize.36.36.medium.0.png,True,W,3,2,La Liga
+63,real-madrid,RMD,9/18,AT,PSG,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ligue-1/retina/6409.vresize.36.36.medium.0.png,True,L,0,3,UCL
+64,real-madrid,RMD,9/22,AT,SEV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6167.vresize.36.36.medium.0.png,True,W,1,0,La Liga
+65,real-madrid,RMD,9/25,VS,OSA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/copa-rey/6175.vresize.36.36.medium.0.png,False,,,,La Liga
+66,real-madrid,RMD,9/28,AT,ATM,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6172.vresize.36.36.medium.0.png,False,,,,La Liga
+67,real-madrid,RMD,10/1,VS,CB,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/belg/6181.vresize.36.36.medium.0.png,False,,,,UCL
+68,real-madrid,RMD,10/5,VS,GRA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/23420.vresize.36.36.medium.0.png,False,,,,La Liga
+69,real-madrid,RMD,10/19,AT,MLL,https://b.fssta.com/uploads/application/bigboard/soccer/defaultTeamLogo.png,False,,,,La Liga
+70,real-madrid,RMD,10/22,AT,GAL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/tsl/6455.vresize.36.36.medium.0.png,False,,,,UCL
+71,real-madrid,RMD,10/27,AT,BAR,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6162.vresize.36.36.medium.0.png,False,,,,La Liga
+72,real-madrid,RMD,10/30,VS,LGN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/26846.vresize.36.36.medium.0.png,False,,,,La Liga
+73,real-madrid,RMD,11/3,VS,BET,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6168.vresize.36.36.medium.0.png,False,,,,La Liga
+74,real-madrid,RMD,11/6,VS,GAL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/tsl/6455.vresize.36.36.medium.0.png,False,,,,UCL
+75,manchester-united,MAN,8/24,VS,CP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7131.vresize.36.36.medium.0.png,True,L,1,2,EPL
+76,manchester-united,MAN,8/31,AT,SHN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7128.vresize.36.36.medium.0.png,True,D,1,1,EPL
+77,manchester-united,MAN,9/14,VS,LEI,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7127.vresize.36.36.medium.0.png,True,W,1,0,EPL
+78,manchester-united,MAN,9/19,VS,ASN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/26673.vresize.36.36.medium.0.png,True,W,1,0,Europa
+79,manchester-united,MAN,9/22,AT,WHU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6143.vresize.36.36.medium.0.png,True,L,0,2,EPL
+80,manchester-united,MAN,9/25,VS,ROC,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/8270.vresize.36.36.medium.0.png,False,,,,Lg Cup
+81,manchester-united,MAN,9/30,VS,ARS,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6145.vresize.36.36.medium.0.png,False,,,,EPL
+82,manchester-united,MAN,10/3,AT,AZ,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/holl/6439.vresize.36.36.medium.0.png,False,,,,Europa
+83,manchester-united,MAN,10/6,AT,NU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6151.vresize.36.36.medium.0.png,False,,,,EPL
+84,manchester-united,MAN,10/20,VS,LIV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6140.vresize.36.36.medium.0.png,False,,,,EPL
+85,manchester-united,MAN,10/24,AT,PTZ,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/6332.vresize.36.36.medium.0.png,False,,,,Europa
+86,manchester-united,MAN,10/27,AT,NC,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/7132.vresize.36.36.medium.0.png,False,,,,EPL
+87,manchester-united,MAN,11/2,AT,BOU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/8260.vresize.36.36.medium.0.png,False,,,,EPL
+88,manchester-united,MAN,11/7,VS,PTZ,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/6332.vresize.36.36.medium.0.png,False,,,,Europa
+89,manchester-united,MAN,11/10,VS,BHA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/8257.vresize.36.36.medium.0.png,False,,,,EPL
+90,chelsea,CHE,8/24,AT,NC,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/7132.vresize.36.36.medium.0.png,True,W,3,2,EPL
+91,chelsea,CHE,8/31,VS,SU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/6141.vresize.36.36.medium.0.png,True,D,2,2,EPL
+92,chelsea,CHE,9/14,AT,WLV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/7140.vresize.36.36.medium.0.png,True,W,5,2,EPL
+93,chelsea,CHE,9/17,VS,VAL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/la-liga/retina/6169.vresize.36.36.medium.0.png,True,L,0,1,UCL
+94,chelsea,CHE,9/22,VS,LIV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6140.vresize.36.36.medium.0.png,True,L,1,2,EPL
+95,chelsea,CHE,9/25,VS,GRI,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/fa_cup/8275.vresize.36.36.medium.0.png,False,,,,Lg Cup
+96,chelsea,CHE,9/28,VS,BHA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/8257.vresize.36.36.medium.0.png,False,,,,EPL
+97,chelsea,CHE,10/2,AT,LIL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ligue-1/retina/6415.vresize.36.36.medium.0.png,False,,,,UCL
+98,chelsea,CHE,10/6,AT,SHN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7128.vresize.36.36.medium.0.png,False,,,,EPL
+99,chelsea,CHE,10/19,VS,NU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6151.vresize.36.36.medium.0.png,False,,,,EPL
+100,chelsea,CHE,10/23,AT,AJX,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/holl/6430.vresize.36.36.medium.0.png,False,,,,UCL
+101,chelsea,CHE,10/26,AT,BUR,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/8240.vresize.36.36.medium.0.png,False,,,,EPL
+102,chelsea,CHE,11/2,AT,WAT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/6148.vresize.36.36.medium.0.png,False,,,,EPL
+103,chelsea,CHE,11/5,VS,AJX,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/holl/6430.vresize.36.36.medium.0.png,False,,,,UCL
+104,chelsea,CHE,11/9,VS,CP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7131.vresize.36.36.medium.0.png,False,,,,EPL
+105,arsenal,ARS,9/1,VS,TOT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6154.vresize.36.36.medium.0.png,True,D,2,2,EPL
+106,arsenal,ARS,9/15,AT,WAT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/6148.vresize.36.36.medium.0.png,True,D,2,2,EPL
+107,arsenal,ARS,9/19,AT,EF,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6124.vresize.36.36.medium.0.png,True,W,3,0,Europa
+108,arsenal,ARS,9/22,VS,AV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6144.vresize.36.36.medium.0.png,True,W,3,2,EPL
+109,arsenal,ARS,9/24,VS,NF,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/7133.vresize.36.36.medium.0.png,True,W,5,0,Lg Cup
+110,arsenal,ARS,9/30,AT,MAN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6157.vresize.36.36.medium.0.png,False,,,,EPL
+111,arsenal,ARS,10/3,VS,STD,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/belg/6192.vresize.36.36.medium.0.png,False,,,,Europa
+112,arsenal,ARS,10/6,VS,BOU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/8260.vresize.36.36.medium.0.png,False,,,,EPL
+113,arsenal,ARS,10/21,AT,SU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/6141.vresize.36.36.medium.0.png,False,,,,EPL
+114,arsenal,ARS,10/24,VS,VDG,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ppl/7264.vresize.36.36.medium.0.png,False,,,,Europa
+115,arsenal,ARS,10/27,VS,CP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7131.vresize.36.36.medium.0.png,False,,,,EPL
+116,arsenal,ARS,11/2,VS,WLV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/7140.vresize.36.36.medium.0.png,False,,,,EPL
+117,arsenal,ARS,11/6,AT,VDG,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ppl/7264.vresize.36.36.medium.0.png,False,,,,Europa
+118,arsenal,ARS,11/9,AT,LEI,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7127.vresize.36.36.medium.0.png,False,,,,EPL
+119,arsenal,ARS,11/23,VS,SHN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7128.vresize.36.36.medium.0.png,False,,,,EPL
+120,tottenham-hotspur,TOT,9/1,AT,ARS,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6145.vresize.36.36.medium.0.png,True,D,2,2,EPL
+121,tottenham-hotspur,TOT,9/14,VS,CP,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7131.vresize.36.36.medium.0.png,True,W,4,0,EPL
+122,tottenham-hotspur,TOT,9/18,AT,OLY,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/6449.vresize.36.36.medium.0.png,True,D,2,2,UCL
+123,tottenham-hotspur,TOT,9/21,AT,LEI,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7127.vresize.36.36.medium.0.png,True,L,1,2,EPL
+124,tottenham-hotspur,TOT,9/24,AT,COL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/8242.vresize.36.36.medium.0.png,True,D,0,0,Lg Cup
+125,tottenham-hotspur,TOT,9/28,VS,SHN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/7128.vresize.36.36.medium.0.png,False,,,,EPL
+126,tottenham-hotspur,TOT,10/1,VS,MUN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6123.vresize.36.36.medium.0.png,False,,,,UCL
+127,tottenham-hotspur,TOT,10/5,AT,BHA,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/8257.vresize.36.36.medium.0.png,False,,,,EPL
+128,tottenham-hotspur,TOT,10/19,VS,WAT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engch/6148.vresize.36.36.medium.0.png,False,,,,EPL
+129,tottenham-hotspur,TOT,10/22,VS,RSB,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ucl/7486.vresize.36.36.medium.0.png,False,,,,UCL
+130,tottenham-hotspur,TOT,10/27,AT,LIV,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6140.vresize.36.36.medium.0.png,False,,,,EPL
+131,tottenham-hotspur,TOT,11/2,AT,EVE,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6149.vresize.36.36.medium.0.png,False,,,,EPL
+132,tottenham-hotspur,TOT,11/6,AT,RSB,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ucl/7486.vresize.36.36.medium.0.png,False,,,,UCL
+133,tottenham-hotspur,TOT,11/9,VS,SU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/engl1/6141.vresize.36.36.medium.0.png,False,,,,EPL
+134,tottenham-hotspur,TOT,11/23,AT,WHU,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6143.vresize.36.36.medium.0.png,False,,,,EPL
+135,bayern-munich,BM,8/24,AT,SKE,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6125.vresize.36.36.medium.0.png,True,W,3,0,Bund
+136,bayern-munich,BM,8/31,VS,MAI,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6135.vresize.36.36.medium.0.png,True,W,6,1,Bund
+137,bayern-munich,BM,9/14,AT,RBL,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/24066.vresize.36.36.medium.0.png,True,D,1,1,Bund
+138,bayern-munich,BM,9/18,VS,RSB,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/ucl/7486.vresize.36.36.medium.0.png,True,W,3,0,UCL
+139,bayern-munich,BM,9/21,VS,KLN,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/7164.vresize.36.36.medium.0.png,True,W,4,0,Bund
+140,bayern-munich,BM,9/28,AT,PAD,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/8291.vresize.36.36.medium.0.png,False,,,,Bund
+141,bayern-munich,BM,10/1,AT,TOT,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/english-premier-league/retina/6154.vresize.36.36.medium.0.png,False,,,,UCL
+142,bayern-munich,BM,10/5,VS,HOF,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/8288.vresize.36.36.medium.0.png,False,,,,Bund
+143,bayern-munich,BM,10/19,AT,AUG,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/8285.vresize.36.36.medium.0.png,False,,,,Bund
+144,bayern-munich,BM,10/22,AT,OLY,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/6449.vresize.36.36.medium.0.png,False,,,,UCL
+145,bayern-munich,BM,10/26,VS,UB,https://b.fssta.com/uploads/application/bigboard/soccer/defaultTeamLogo.png,False,,,,Bund
+146,bayern-munich,BM,10/29,AT,BOC,https://b.fssta.com/uploads/application/bigboard/soccer/defaultTeamLogo.png,False,,,,DFB PKL
+147,bayern-munich,BM,11/2,AT,EF,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6124.vresize.36.36.medium.0.png,False,,,,Bund
+148,bayern-munich,BM,11/6,VS,OLY,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/europa/6449.vresize.36.36.medium.0.png,False,,,,UCL
+149,bayern-munich,BM,11/9,VS,DOR,https://b.fssta.com/uploads/content/dam/fsdigital/fscom/global/dev/static_resources/soccer/teams/bundesliga/retina/6122.vresize.36.36.medium.0.png,False,,,,Bund

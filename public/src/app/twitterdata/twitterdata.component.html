@@ -1,32 +1,32 @@
 <div class="p-1">
-        <p class="h5 bg-info p-1">Popular Tweets about {{team}}</p>
-    
-        <div class="popular_tweet_board">
-            <div *ngFor="let tweet of popular_tweets" class="mb-1 mt-1 row border-bottom border-info">
-                <div class="col-sm-2">
-                    <a [href]="tweet.profile_url" target="_blank">
-                        <img [src]="tweet.user.profile_image_url" alt="profile image" class="tweet_profile_img">
-                    </a>
-                </div>
-                <div class="col-sm-9">
-                    <div class="row">
-                        <p class="font-weight-bold col">{{tweet.user.screen_name}}</p>
-                        <p class="float-right col font-weight-light font-italic"> {{tweet.created_at | date : 'MMM dd, yyyy hh:mm:ss a'}}</p>
-                    </div>
-                    <p><a [href]="tweet.tweet_url" target="_blank">{{tweet.text}}</a></p>
-                    <div class="row">
-                        <p class="col-sm-4 purple"> 
-                            <b>{{tweet.favorite_count}} </b>Likes
-                            
-                        </p>
-                        <p class="col-sm-4 offset-sm-1 orange">
-                            <b>{{tweet.retweet_count}} </b>Retweet
-                        </p>
-                    </div>
-                </div>
-                
+    <p class="h5 bg-info p-1">Popular Tweets about {{team}}</p>
+
+    <div class="popular_tweet_board">
+        <div *ngFor="let tweet of popular_tweets" class="mb-1 mt-1 row border-bottom border-info">
+            <div class="col-sm-2">
+                <a [href]="tweet.profile_url" target="_blank">
+                    <img [src]="tweet.user.profile_image_url" alt="profile image" class="tweet_profile_img">
+                </a>
             </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <p class="font-weight-bold col">{{tweet.user.screen_name}}</p>
+                    <p class="float-right col font-weight-light font-italic"> {{tweet.created_at | date : 'MMM dd, yyyy hh:mm:ss a'}}</p>
+                </div>
+                <p><a [href]="tweet.tweet_url" target="_blank">{{tweet.text}}</a></p>
+                <div class="row">
+                    <p class="col-sm-4 purple"> 
+                        <b>{{tweet.favorite_count}} </b>Likes
+                        
+                    </p>
+                    <p class="col-sm-4 offset-sm-1 orange">
+                        <b>{{tweet.retweet_count}} </b>Retweet
+                    </p>
+                </div>
+            </div>
+            
         </div>
+    </div>
 </div>
 
 <div class="p-1">

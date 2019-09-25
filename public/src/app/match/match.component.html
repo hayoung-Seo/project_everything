@@ -1,0 +1,57 @@
+<div class="p-1">
+    <p class="h5 bg-purple p-1">Last Match Result</p>
+    <!-- <p *ngIf="prev_match">{{prev_match | json}}</p> -->
+    <div *ngIf="prev_match">
+        <p class="offset-sm-5 font-weight-light">{{prev_match.match_date | date : 'MMM dd, yyyy'}}</p>
+        <div class="row">
+            <div class="offset-sm-3 col-sm-2">
+                <img [src]="team_data.img_url" alt="your team img" class="emblem_img">
+                <p><b>{{prev_match.team_name_abb}}</b></p>
+            </div>
+    
+            <div class="col-sm-3">
+                <h5>{{prev_match.score_team}} 
+                    &nbsp;&nbsp;&nbsp; 
+                    : 
+                    &nbsp;&nbsp;&nbsp;
+                    {{prev_match.score_opp}}</h5>
+            </div>
+    
+            <div class="col-sm-2">
+                <img [src]="prev_match.opp_team_img_url" alt="other team img" class="emblem_img">
+                <p><b>{{prev_match.opp_team_abb}}</b></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="p-1">
+        <p class="h5 bg-navy p-1">Next Match</p>
+        <!-- <p *ngIf="prev_match">{{prev_match | json}}</p> -->
+        <div *ngIf="next_match">
+            <p class="offset-sm-5 font-weight-light">{{next_match.match_date | date : 'MMM dd, yyyy'}}</p>
+            <div class="row">
+                <div class="offset-sm-3 col-sm-2">
+                    <img [src]="team_data.img_url" alt="your team img" class="emblem_img">
+                    <p><b>{{next_match.team_name_abb}}</b></p>
+                </div>
+        
+                <div class="col-sm-3">
+                    <h5>{{next_match.score_team}} 
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        {{next_match.vs_or_at}}
+                        &nbsp;&nbsp;&nbsp;
+                        {{next_match.score_opp}}</h5>
+                </div>
+        
+                <div class="col-sm-2">
+                    <img [src]="next_match.opp_team_img_url" alt="other team img" class="emblem_img">
+                    <p><b>{{next_match.opp_team_abb}}</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- 
+
+index,team_name,team_name_abb,match_date,vs_or_at,opp_team_abb,opp_team_img_url,finished,w_or_l,score_team,score_opp,league -->

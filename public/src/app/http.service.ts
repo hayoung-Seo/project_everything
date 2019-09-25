@@ -25,4 +25,14 @@ export class HttpService {
   get_popular_tweets(team) {
     return this._http.get(`twitter/popular/${team}`)
   }
+
+  // get team's information from mongodb
+  get_team_info(team) {
+    return this._http.get(`team/${team}`)
+  }
+
+  // get matches of the team from mongodb
+  get_matches(team) {
+    return this._http.get(`matches/${team}`)
+  }
 }
