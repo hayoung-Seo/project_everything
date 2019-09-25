@@ -15,4 +15,34 @@ app.use(express.static(__dirname + "/public/dist/public"));
 mongoose = require('./server/config/mongoose.js');
 
 // routes
-// require('./server/config/routes.js')(app)
+require('./server/config/routes.js')(app)
+
+//sockets
+const io = require('socket.io')(server);
+
+var users={};
+io.on('connection', function (socket) { //2
+    socket.on('got_new_user', function(data){
+        socket.emit('existing_users',users)
+        // console.log(data.name)
+        if (data.name){
+            users[socket.id]=data.name
+            console.log("new user"+data)
+            io.emit('new_user', {name:data.name, id:socket.id})
+            console.log(users)
+        }
+
+
+   })
+   socket.on('disconnect', function(){
+       console.log("disconnected id:",socket.id)
+       io.emit('disconnected_user',socket.id)
+       delete users[socket.id]
+       console.log(users)
+   })
+
+   socket.on('new_msg', function(data){
+       console.log("new_msg: "+data)
+        io.emit('new_message', { name: users[socket.id], msg: data})
+   })
+});
