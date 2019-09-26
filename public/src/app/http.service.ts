@@ -1,16 +1,23 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-// import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import * as io from 'socket.io-client';
+import {Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class HttpService {
+  // private url = 'http://localhost:8000';
+  readonly url : string = "http://localhost:8000";
+  socket: any;
+  name: any;
 
   NEWS_API_KEY = '07013fad55a047e3891be41d8a68c908';
   curUser : any;
 
   constructor(private _http : HttpClient) {
+    this.socket= io(this.url);
+    // this.name="Kushal"
   }
 
   // FOR KUSHAL : save user information in http.service (once user logged in)
@@ -39,6 +46,22 @@ export class HttpService {
   // set the logged in user's favorite team
   set_favorite_team(email, data) {
     return this._http.patch(`/users/${email}`, data);
+  }
+  
+  // listen to any emits from the backend
+  listen(event_name){
+    console.log("inside listen in service")
+    return new Observable((subscriber)=>{
+      this.socket.on(event_name, (data)=>{
+        // console.log("--here:", data);
+        subscriber.next(data); 
+      })
+    })
+  }
+
+  // emit to the backend socket
+  emit(event_name, data){
+    this.socket.emit(event_name, data);
   }
 
   // get recent news about the team from google news api
