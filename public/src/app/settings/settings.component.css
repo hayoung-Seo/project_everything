@@ -1,0 +1,16 @@
+.bg-navy{
+    background-color: #223344;
+    color:#F5F5F5;
+}
+
+/* a:hover {
+    background-color: #A40047;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+.team_block:hover {
+    background-color: #A40047;
+    text-decoration: none;
+    cursor: pointer;
+}

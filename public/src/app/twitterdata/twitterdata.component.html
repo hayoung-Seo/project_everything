@@ -33,6 +33,7 @@
     <p class="h5 bg-warning p-1">Recent Tweets about {{team}}</p>
 
     <div class="pre-scrollable recent_tweet_board">
+    <!-- <div class="recent_tweet_board">     -->
         <div *ngFor="let tweet of recent_tweets" class="mb-1 mt-1 row border-bottom border-warning">
             <div class="col-sm-2">
                 <a [href]="tweet.profile_url" target="_blank">

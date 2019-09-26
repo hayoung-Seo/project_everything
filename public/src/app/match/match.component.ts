@@ -29,9 +29,9 @@ export class MatchComponent implements OnInit {
     let obs = this._httpService.get_team_info(this.team);
     obs.subscribe(data => {
       if (data['error']) {
-        console.log("--got error while getting the team data",this.team);
+        // console.log("--got error while getting the team data",this.team);
       } else {
-        console.log("--got team data:",data['data']);
+        // console.log("--got team data:",data['data']);
         this.team_data = data['data'];
       }
     })
@@ -42,14 +42,14 @@ export class MatchComponent implements OnInit {
     let obs = this._httpService.get_matches(this.team);
     obs.subscribe(data => {
       if (data['error']) {
-        console.log("--got error while getting match data",this.team);
+        // console.log("--got error while getting match data",this.team);
       } else {
-        console.log("--got matches data:",data);
+        // console.log("--got matches data:",data);
         this.matches = data['data'];
         this.update_match_date();
         this.set_prev_next_match();
-        console.log("--previous match: ", this.prev_match);
-        console.log("--next match: ", this.next_match);
+        // console.log("--previous match: ", this.prev_match);
+        // console.log("--next match: ", this.next_match);
       }
     })
   }
@@ -64,7 +64,7 @@ export class MatchComponent implements OnInit {
         if (i > 0) {
           this.prev_match = this.matches[i-1];
         } else {
-          console.log("--no previous match available..");
+          // console.log("--no previous match available..");
         }
         break;
       }

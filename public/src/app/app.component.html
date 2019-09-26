@@ -1,8 +1,21 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<div class="p-3">
+
+<div class="p-3 row" *ngIf="login_step">
+  <!-- Add Login comp here -->
+  <app-login class="col" (eventEmitter)="user_logged_in()"></app-login>
+  <app-register class="col" (eventEmitter)="user_logged_in()"></app-register>>
+</div>
+
+<div class="p-3" *ngIf="setting_step">
+  <!-- Add Settings comp here -->
+  <app-settings (eventEmitter)="settings_updated()"></app-settings>
+</div>
+
+<div class="p-3" *ngIf="main_step">
   <div class="row">
       <h1 class="col-sm-10">All about your team</h1>
-      <a href="" (click)="logoff()" class="col">Logoff</a>
+      <a href="javascript:void(0)" (click)="logoff()" class="col a">Sign out</a>
+      <a href="javascript:void(0)" (click)="change_setting()" class="col">Settings</a>
   </div>
 
   <div class="mt-3">

@@ -1,0 +1,18 @@
+<h3 class="offset-sm-5">Login</h3>
+<div class="row">
+    <!-- {{loginUser | json}} -->
+    <form class="p-3 offset-sm-2 col-sm-8">
+        <p *ngIf="error" class="error">{{error}}</p>
+        <div class="form-group row">
+            <label for="email" class="col-sm-4 form-label">Email</label>
+            <input type="text" class="form-control col-sm-8" name="email" [(ngModel)]="loginUser.email">
+        </div>
+
+        <div class="form-group row">
+            <label for="password" class="col-sm-4 form-label">Password</label>
+            <input type="password" class="form-control col-sm-8" name="password" [(ngModel)]="loginUser.password">
+        </div>
+
+        <button (click)="login_user()" class="btn btn-success float-right">Login</button>
+    </form>
+</div>

@@ -11,6 +11,15 @@ app.use(express.json());
 // static
 app.use(express.static(__dirname + "/public/dist/public"));
 
+// express-session
+const session = require('express-session');
+app.use(session({
+    secret:'project everything', 
+    resave: false,
+    saveUninitialized: true,
+    cookie:{maxAge:120000}
+}))
+
 // mongoose
 mongoose = require('./server/config/mongoose.js');
 

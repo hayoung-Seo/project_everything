@@ -1,0 +1,14 @@
+<!-- <p>settings works!</p> -->
+<div class="row">
+    <h1 class="col-sm-10">All about your team</h1>
+    <!-- <a href="javascript:void(0)" (click)="logoff()" class="col">Sign out</a> -->
+</div>
+
+<div class="offset-sm-3 col-sm-6 text-center">
+    <h3>Select your favorite team</h3>
+    <div class="offset-sm-2 col-sm-8">
+        <a (click)="select_team(team.team_name)" *ngFor="let team of teams">
+            <div class="p-3 bg-navy m-3 team_block">{{team['team_name']}}</div>
+        </a>
+    </div>
+</div>

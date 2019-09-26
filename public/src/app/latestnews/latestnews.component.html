@@ -1,3 +1,9 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    console.log("--jquery from sub comp");
+})
+</script>
 <div class="p-1">
     <p class="h5 bg-success p-1">Latest News for {{team}}</p>
     <div *ngFor="let news of recent_news" class="row">
