@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import {HttpService} from './http.service';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { LatestnewsComponent } from './latestnews/latestnews.component';
 import { ChatComponent } from './chat/chat.component';
 import { TwitterdataComponent } from './twitterdata/twitterdata.component';
@@ -22,7 +23,8 @@ import { MatchComponent } from './match/match.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

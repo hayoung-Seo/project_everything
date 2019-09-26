@@ -1,76 +1,42 @@
 <html>
 <head>
     <title>Sockets</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+integrity= "sha256–2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+crossorigin=”anonymous”>
+</script>
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>
     <script type ="text/javascript">
-        $(document).ready(function (){
-            var socket = io(); //1
-            var name= prompt("What is your name?");
-            socket.emit('got_new_user',{name:name});
-            socket.on('existing_users',function(data){
-                // console.log(data)
-                for(let i in data ){
-                    console.log("this is socket id:",i)
-                    $("#sidebar").append('<p id='+i+'>'+data[i]+'</p>')
-                }
-            })
-            socket.on('new_user',function(data){
-                console.log("newwwwww"+data)
-                $("#sidebar").append('<p id='+data.id+'>'+data.name+"</p>")
-            })
-            socket.on('disconnected_user',function(data){
-                console.log("in disconnected",data)
-                console.log('#'+data)
-                $('#'+data).remove();
-            })
-
-            $("#message").keypress(function(event){
-                if (event.which==13){
-                    let new_msg=$("#message").val()
-                socket.emit('new_msg',new_msg)
-                $("#message").val('')
-                return false
-                }   
-                $("#chat_box").scrollTop($("#chat_box")[0].scrollHeight);
-            })
-
-
-
-            $("#send").click(function(){
-                let new_msg=$("#message").val()
-                socket.emit('new_msg',new_msg)
-                $("#message").val('')
-            })
-            socket.on('new_message',function(data){
-                console.log("new message reemmited by server: " +data.name+"  "+ data.msg)
-                $("#chat_box").append("<p>"+data.name+":  "+data.msg+"</p>")
-            })
-
-         })
-
     </script>
 </head>
 <body class="container">
     <h4>Soccer Fanatics</h4>
-    <div class="row text-center mh-100">
-        <div class="col-2 border pre-scrollable " id="sidebar">
-    difhauidhf
+    <div class="row text-center h-50" >
+        <div class="col-2 border pre-scrollable" id="sidebar" >
+            <p *ngFor=" let user of all_users">
+                {{user.name}}
+            </p>
         </div> 
-        <div id="chat_box" class="text-left col-10 pre-scrollable  border"> some chat msg</div>
-
+        <div id="chat_box" class="text-left col-10 pre-scrollable  border" >
+            <p *ngFor="let one of all_chat">
+                {{one.name}}: {{one.msg}}
+            </p>
+        </div>
     </div>
-    <textarea  name="msg" id="message" class="form-control mt-3 " placeholder="Enter your message here!"></textarea>
-    <input type="submit" (click)="send_msg()" id="send" class="float-right btn btn-success mt-2">
+    <form >
+        <textarea (keyup.enter)="send_new_msg()" name="msg" id="message" class="form-control mt-3 " placeholder="Enter your message here!" rows="1" [(ngModel)]="chat.msg"></textarea>
+        <input (click)="send_new_msg()" type="submit" id="send" class="float-right btn btn-success mt-2" >
 
-    <button (click)="testButton()">Test</button>
-
+    </form>
+{{all_users|json}}
 </body>
 </html>
 

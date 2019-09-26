@@ -10,47 +10,29 @@ export class HttpService {
   // private url = 'http://localhost:8000';
   readonly url : string = "http://localhost:8000";
   socket: any;
+  name: any;
 
   NEWS_API_KEY = '07013fad55a047e3891be41d8a68c908';
-  constructor(private _http : HttpClient) {
-    console.log("hfgfgfgf");
-    
-    this.socket= io(this.url);
-    this.socket.on('test_event',(data)=>{
-      console.log(data);
-      
-    })
-  }
   
+  constructor(private _http : HttpClient) {
+    this.socket= io(this.url);
+    this.name="Kushal"
+  }
+
+  // listen to any emits from the backend
   listen(event_name){
     console.log("inside listen in service")
-    console.log(event_name);
     return new Observable((subscriber)=>{
       this.socket.on(event_name, (data)=>{
-        console.log("--here:", data);
-        subscriber.next(data);
-      
+        // console.log("--here:", data);
+        subscriber.next(data); 
       })
     })
   }
 
-  // listen(event_name){
-  //   console.log("inside listen in service")
-  //   // return this.socket.on(event_name, (data)=>{
-  //   //     console.log("--here:", data);
-  //   // })
-  //   this.socket.on('hello', (data) => {
-  //     console.log("--here:", data);
-  //   });
-    
-  // }
-
+  // emit to the backend socket
   emit(event_name, data){
-    console.log(this.socket);
-
-
     this.socket.emit(event_name, data);
-    // return this.listen(new_event);
   }
 
   // get recent news about the team from google news api

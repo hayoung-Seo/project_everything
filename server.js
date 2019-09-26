@@ -24,21 +24,23 @@ mongoose = require('./server/config/mongoose.js');
 //sockets
 const io = require('socket.io')(server);
 
-var users={};
+var user={};
+var all_users=[];
+var all_chat=[]
 io.on('connection', function (socket) { //2
     console.log("--connecter");
-//     socket.on('got_new_user', function(data){
-//         socket.emit('existing_users',users)
-//         // console.log(data.name)
-//         if (data.name){
-//             users[socket.id]=data.name
-//             console.log("new user"+data)
-//             io.emit('new_user', {name:data.name, id:socket.id})
-//             console.log(users)
-//         }
+    socket.on('got_new_user', function(data){
+        if (data){
+            user.id=socket.id
+            user.name=data
+            console.log("new user: "+user)
+            io.emit('new_user', user)
+            console.log(user)
+            all_users.push(user)
+            socket.emit('existing_users',all_users)
+        }
+   })
 
-
-//    })
 //    socket.on('disconnect', function(){
 //        console.log("disconnected id:",socket.id)
 //        io.emit('disconnected_user',socket.id)
@@ -50,9 +52,15 @@ io.on('connection', function (socket) { //2
 //        console.log("new_msg: "+data)
 //         io.emit('new_message', { name: users[socket.id], msg: data})
 //    })
-    socket.emit('test_event ','here is some data');
-    socket.on('hello',(data)=>{
-        console.log(data)
-    })
+
+
+
+    socket.on('this_chat',function(data){
+        console.log("******new_msg "+data)
+        all_chat.push(data)
+        io.emit('all_chat_rtn', all_chat)
+    });
+
+
 });
 require('./server/config/routes.js')(app)
