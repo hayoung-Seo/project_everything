@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {HttpService} from '../http.service';
 
 
@@ -7,7 +7,7 @@ import {HttpService} from '../http.service';
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.css']
 })
-export class ChatComponent implements OnInit {
+export class ChatComponent implements AfterViewInit {
   chat:any;
   all_chat: any;
   all_users: any;
@@ -25,18 +25,23 @@ export class ChatComponent implements OnInit {
 
   
 
-  ngOnInit() {
+  ngAfterViewInit() {
     this.send_new_user();
     this.get_back_msg()
     this.chat.name=this._httpService.curUser
     this.get_all_users()
-    this.get_updated_all_users()
+    this.get_updated_all_users();
+    this.container = document.getElementById("msgContainer");        console.log("-container:", this.container);
+    console.log("-[before]this.container.scrollTop:", this.container.scrollTop);
+    this.container.scrollTop = this.container.scrollHeight;  
+    console.log("-[after]this.container.scrollTop:", this.container.scrollTop);  
   }
 
 
 
   send_new_user(){
-    this.new_user.name=this._httpService.curUser
+
+    this.new_user.name=this._httpService.curUser;
     this._httpService.emit('got_new_user',this.new_user);
   }
 
@@ -48,6 +53,11 @@ export class ChatComponent implements OnInit {
   }
 
   send_new_msg(){
+    this.container = document.getElementById("msgContainer");        console.log("-container:", this.container);
+    console.log("-[before]this.container.scrollTop:", this.container.scrollTop);
+    this.container.scrollTop = this.container.scrollHeight;  
+    console.log("-[after]this.container.scrollTop:", this.container.scrollTop);  
+    
     // this.all_chat.push(this.chat)
     this._httpService.emit('this_chat', this.chat)
     this.chat.msg='';

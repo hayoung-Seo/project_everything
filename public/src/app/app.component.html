@@ -24,30 +24,16 @@
 
     <div class="main mt-3 p-3 border">
       <div class="row">
-        <div class="col-sm-6">
-          <!-- <div class="previous_game">Previous game score component</div>
-          <div class="next_game">Next game component</div> -->
-          <app-match [team]="favorite_team"></app-match>
-          <!-- <div class="latest_news"> -->
-            <app-latestnews [team]="favorite_team"></app-latestnews>
-          <!-- </div> -->
-        </div>
+          <div class="col-sm-6">
+              <app-match [team]="favorite_team"></app-match>
+              <app-latestnews [team]="favorite_team"></app-latestnews>
+              <app-scorechart [team]="favorite_team"></app-scorechart>
+          </div>
 
-        <div class="col-sm-6">
-          <!-- <app-chat class="live_chat"></app-chat> -->
-        </div>
-      </div>
-
-      <div class="row mt-1">
-        <div class="col-sm-6">
-          <!-- <div class="data_visualization">Data Visualization component</div> -->
-          <app-scorechart [team]="favorite_team"></app-scorechart>
-        </div>
-
-        <div class="col-sm-6">
-          <!-- <div class="twitter_data">Data from twitter component</div> -->
-          <app-twitterdata [team]="favorite_team"></app-twitterdata>
-        </div>
+          <div class="col-sm-6">
+              <app-chat class="live_chat"></app-chat>
+              <app-twitterdata class="mt-3"[team]="favorite_team"></app-twitterdata>
+          </div>
       </div>
     </div>
   </div>
