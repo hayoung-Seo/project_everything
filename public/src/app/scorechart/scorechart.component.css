@@ -1,0 +1,11 @@
+.bg-orange {
+    background-color: #fc7303;
+}
+.bg-other {
+    background-color:#f3af8b;
+}
+
+.container {
+    width: 100%;
+    min-height: 250px;
+}

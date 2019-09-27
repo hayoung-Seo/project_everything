@@ -14,6 +14,7 @@ export class HttpService {
 
   NEWS_API_KEY = '07013fad55a047e3891be41d8a68c908';
   curUser : any;
+  // allUserNames = [];
 
   constructor(private _http : HttpClient) {
     this.socket= io(this.url);
@@ -23,7 +24,9 @@ export class HttpService {
   // FOR KUSHAL : save user information in http.service (once user logged in)
   save_user(data) {
     this.curUser = data;
+    // this.allUserNames.push(this.curUser.first_name);
     console.log("--curUser in http.service.ts: ", this.curUser);
+    // console.log("--allUserNames in http.service.ts:", this.allUserNames);
   }
 
   is_logged_in() {
@@ -41,6 +44,10 @@ export class HttpService {
 
   add_user(data) {
     return this._http.post('/users', data);
+  }
+
+  get_all_users() {
+    return this._http.get('/users');
   }
 
   // set the logged in user's favorite team
@@ -77,6 +84,17 @@ export class HttpService {
 
   // get popular tweets about the team (team name in the hashtage) from twitter api
   get_popular_tweets(team) {
+    if (team == 'Manchester City FC') {
+      team = "Manchester City";
+    } else if (team == "Real Madrid CF") {
+      team = "Real Madrid";
+    } else if (team == "Manchester United FC") {
+      team = "ManchesterUnited"
+    } else if (team == "Tottenham Hotspur FC") {
+      team = "TottenhamHotspur"
+    } else if (team == "FC Bayern Munich") {
+      team = "BayernMunich"
+    }
     return this._http.get(`twitter/popular/${team}`)
   }
 

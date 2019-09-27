@@ -19,7 +19,7 @@ export class LatestnewsComponent implements OnInit {
 
   ngOnInit() {
     // TODO: activate this to get latest news data
-    // this.get_recent_news();
+    this.get_recent_news();
   }
 
   get_recent_news() {

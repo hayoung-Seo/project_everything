@@ -14,6 +14,7 @@ import { MatchComponent } from './match/match.component';
 import { LoginComponent } from './login/login.component';
 import { SettingsComponent } from './settings/settings.component';
 import { RegisterComponent } from './register/register.component';
+import { ScorechartComponent } from './scorechart/scorechart.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { RegisterComponent } from './register/register.component';
     MatchComponent,
     LoginComponent,
     SettingsComponent,
-    RegisterComponent
+    RegisterComponent,
+    ScorechartComponent
   ],
   imports: [
     BrowserModule,
