@@ -33,29 +33,35 @@ mongoose = require('./server/config/mongoose.js');
 //sockets
 const io = require('socket.io')(server);
 
-var user={};
 var all_users=[];
 var all_chat=[]
 io.on('connection', function (socket) { //2
-    console.log("--connecter");
+    // console.log("--connecter");
     socket.on('got_new_user', function(data){
-        if (data){
+        console.log("---inside gserver user collection," , data);
+        
+        let user={id:'',name:''};
             user.id=socket.id
-            user.name=data
-            console.log("new user: "+user)
-            io.emit('new_user', user)
-            console.log(user)
+            user.name=data.name
+            console.log("new user####: "+user.name)
+            // io.emit('new_user', user)
+            // console.log(user)
             all_users.push(user)
-            socket.emit('existing_users',all_users)
-        }
-   })
+            for(var i of all_users){
+                console.log("********in server all_users", i['name'] )
 
-//    socket.on('disconnect', function(){
-//        console.log("disconnected id:",socket.id)
-//        io.emit('disconnected_user',socket.id)
-//        delete users[socket.id]
-//        console.log(users)
-//    })
+            }
+            
+            io.emit('existing_users',all_users)
+   })
+   socket.on('disconnect', function(){
+       console.log("disconnected id:",socket.id)
+
+        all_users=all_users.filter(function(x){
+            return x.id !== socket.id
+        })    
+         io.emit('updated_all_users',all_users)
+   })
 
 //    socket.on('new_msg', function(data){
 //        console.log("new_msg: "+data)
@@ -67,6 +73,10 @@ io.on('connection', function (socket) { //2
     socket.on('this_chat',function(data){
         console.log("******new_msg "+data)
         all_chat.push(data)
+        for(var i of all_chat){
+            console.log("********in server all_chat", i['msg'] )
+
+        }
         io.emit('all_chat_rtn', all_chat)
     });
 

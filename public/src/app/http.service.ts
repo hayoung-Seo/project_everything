@@ -8,9 +8,9 @@ import {Observable } from 'rxjs';
 })
 export class HttpService {
   // private url = 'http://localhost:8000';
-  readonly url : string = "http://localhost:8000";
+  readonly url : string = window.location.href;
   socket: any;
-  name: any;
+  // name: any;
 
   NEWS_API_KEY = '07013fad55a047e3891be41d8a68c908';
   curUser : any;
@@ -22,7 +22,7 @@ export class HttpService {
 
   // FOR KUSHAL : save user information in http.service (once user logged in)
   save_user(data) {
-    this.curUser = data;
+    this.curUser = data['first_name'];
     console.log("--curUser in http.service.ts: ", this.curUser);
   }
 

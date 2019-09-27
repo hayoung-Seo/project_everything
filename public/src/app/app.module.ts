@@ -14,6 +14,7 @@ import { MatchComponent } from './match/match.component';
 import { LoginComponent } from './login/login.component';
 import { SettingsComponent } from './settings/settings.component';
 import { RegisterComponent } from './register/register.component';
+import {NgxAutoScrollModule} from 'ngx-auto-scroll';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { RegisterComponent } from './register/register.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxAutoScrollModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

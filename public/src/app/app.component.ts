@@ -37,6 +37,8 @@ export class AppComponent {
     // this.setting_step = false;
     // this.main_step = true;
     // this.favorite_team = "FC Barcelona";
+    // this.curUser = {email:"dasfd", first_name:"KG"};
+    // this._httpService.save_user(this.curUser);
   }
 
   setup() {
