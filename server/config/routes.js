@@ -30,6 +30,9 @@ module.exports = function(app) {
     // get user
     app.get('/users/:email', controller.get_user);
 
+    // get all users
+    app.get('/users', controller.get_users);
+
     // update favorite team for user
     app.patch('/users/:email', controller.update_favorite_team);
 

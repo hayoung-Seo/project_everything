@@ -41,7 +41,12 @@ module.exports = {
         let team_name = request.params.team_name;
         // console.log("--getting recent twitter data for:", team_name);
         let path = `https://api.twitter.com/1.1/search/tweets.json`;
-        let params = {q : encodeURI(team_name.replace(/\s/g, '').toLowerCase()), result_type : 'popular'};
+        // skip CF or FC when searching through twitter
+        // team_name = team_name.replace('CF', '');
+        // team_name = team_name.replace('FC', '');
+        team_name = team_name.replace(/\s/g, '').toLowerCase();
+        console.log("-team name for twitter search:", team_name);
+        let params = {q : encodeURI(team_name), result_type : 'popular'};
         client.get(path, params, function(error, tweets, res){
             if (!error) {
                 // console.log("--popular tweets: ", tweets);
@@ -192,6 +197,17 @@ module.exports = {
         User.findOne({email : email})
             .then(user => {
                 response.json({message:"success", data:user});
+            })
+            .catch(err => {
+                response.json({message:"fail", error:err});
+            })
+    },
+
+    // get users
+    get_users : function(request, response) {
+        User.find({})
+            .then(users => {
+                response.json({message:"success", data:users});
             })
             .catch(err => {
                 response.json({message:"fail", error:err});

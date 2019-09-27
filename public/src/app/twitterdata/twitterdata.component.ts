@@ -20,11 +20,11 @@ export class TwitterdataComponent implements OnInit {
 
   ngOnInit() {
     //TODO : activate this to get twitter data
-    // this.get_popular_tweets();
-    // this.get_recent_tweets();
+    this.get_popular_tweets();
+    this.get_recent_tweets();
 
     //TODO : change time interval!!
-    // const TIME_INTERVAL = 10000;
+    // const TIME_INTERVAL = 7000;
     // setInterval(() => {
     //   this.get_recent_tweets();
     // }, TIME_INTERVAL);

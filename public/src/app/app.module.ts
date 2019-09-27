@@ -15,6 +15,7 @@ import { LoginComponent } from './login/login.component';
 import { SettingsComponent } from './settings/settings.component';
 import { RegisterComponent } from './register/register.component';
 import {NgxAutoScrollModule} from 'ngx-auto-scroll';
+import { ScorechartComponent } from './scorechart/scorechart.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {NgxAutoScrollModule} from 'ngx-auto-scroll';
     MatchComponent,
     LoginComponent,
     SettingsComponent,
-    RegisterComponent
+    RegisterComponent,
+    ScorechartComponent
   ],
   imports: [
     BrowserModule,
